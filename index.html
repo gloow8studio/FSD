@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minha Página Estruturada</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<h1>Titulo da pagina </h1>
+    <div class="container">
+        <header>
+            <h1>Bem-vindo ao Meu Site</h1>
+        </header>
+        
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pag1.html">Sobre</a></li>
+                <li><a href="pag2.html">Serviços</a></li>
+                <li><a href="pag3.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <button onclick="window.location.href='pag1.html'">Ir para a Página 1</button>
+        <button onclick="window.location.href='pag2.html'">Ir para a Página 2</button>
+        <button onclick="window.location.href='pag3.html'">Ir para a Página 3</button>
+        
+        <main>
+            <h2>Conteúdo Principal</h2>
+            <p>Este é o conteúdo principal do site.</p>
+
+            <h2>Notícias</h2>
+            <iframe src="https://www.bing.com/news" width="1600" height="500" frameborder="0"></iframe>
+
+
+            <h4>Notícias</h4>
+            <iframe src="https://ge.globo.com/futebol/futebol-internacional/" width="800" height="500" frameborder="50"></iframe> 
+            <iframe src="https://ge.globo.com/futebol/futebol-internacional/" width="800" height="500" frameborder="50"></iframe>
+
+            <img src="imag1.jpg" alt="Descrição da imagem" width="500" height="250" frameborder="50">
 
 
 
-
-
+        </main>
+        
+        <footer>
+            <p>© 2024 Meu Site. Todos os direitos reservados.</p>
+            <p><a href="contato.html">Contato</a> | <a href="privacidade.html">Política de Privacidade</a></p>
+            <p>Siga-nos nas redes sociais: 
+                <a href="https://facebook.com">Facebook</a> | 
+                <a href="https://twitter.com">Twitter</a>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

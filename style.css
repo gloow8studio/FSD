@@ -1,0 +1,84 @@
+/* Estilos básicos para o corpo e a página */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container principal que envolve todo o conteúdo */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+    margin: 0 20px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilos para a barra lateral */
+.sidebar {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #666;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    margin-left: 220px;
+    padding: 20px;
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 240px); /* Ajuste a largura conforme necessário */
+    height: 100vh; /* Ocupa toda a altura da janela */
+
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px); /* Ajuste para a margem */
+}
